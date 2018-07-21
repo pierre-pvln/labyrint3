@@ -1,0 +1,82 @@
+// main: orange.less
+/*
+ * ##########################  HEADER  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @header-text
+ * @header-text-background
+ * @header-background
+ * @header-background-light
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+#all
+	{
+	padding-top:13em
+	}
+	
+#line
+	{ 
+	position:relative;
+/*	max-width:1050px; */
+	margin:0 auto;
+	text-align:right;
+	right:0;
+	top:0em
+	}
+	
+#header
+	{
+	background: @header-background; /* Old browsers */
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@header-background, endColorstr=@header-background-light);
+	background: -moz-linear-gradient(top, @header-background 0%, @header-background-light 25%, @header-text-background 18%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@header-background), color-stop(25%,@header-background-light), color-stop(18%,@header-text-background)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  @header-background 0%,@header-background-light 25%,@header-text-background 18%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  @header-background 0%,@header-background-light 25%,@header-text-background 18%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @header-background 0%,@header-background-light 25%,@header-text-background 18%); /* IE10+ */
+	background: linear-gradient(top,  @header-background 0%,@header-background-light 25%,@header-text-background 18%); /* W3C */
+	position:absolute;
+	left:0;
+	top:0;
+	width:99.9%;
+	padding:0;
+	}
+
+/* Orange background */
+.button:hover, button:hover, p.readmore a:hover,
+.pagenav a:hover, .pagenav a:active,  .pagenav a:focus,  #advanced-search-toggle:hover,  #advanced-search-toggle:active,  #advanced-search-toggle:focus,
+.profile-edit a:hover, .profile-edit a:active, .profile-edit a:focus,
+#fontsize a:hover,  #fontsize a:active,  #fontsize a:focus,#mobile_select h2 a
+	{
+	color: @header-text;
+	background: @header-background; /* Old browsers */
+	background-color: @header-background ;
+    background-repeat: repeat-x; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@header-background, endColorstr=@header-background-light);
+	background-image: -khtml-gradient(linear, left top, left bottom, from(@header-background), to(@header-background-light));
+	background-image: -moz-linear-gradient(top, @header-background, @header-background-light);
+	background-image: -ms-linear-gradient(top, @header-background, @header-background-light);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @header-background), color-stop(100%, @header-background-light));
+	background-image: -webkit-linear-gradient(top, @header-background, @header-background-light);
+	background-image: -o-linear-gradient(top, @header-background, @header-background-light);
+	background-image: linear-gradient(@header-background, @header-background-light);
+	border-color: @header-background-light @header-background-light @header-background;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+	-webkit-font-smoothing: antialiased;
+	}
+

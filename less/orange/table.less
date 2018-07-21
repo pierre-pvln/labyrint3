@@ -1,0 +1,64 @@
+// main: orange.less
+/*
+ * ##########################  TABLE  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @table-border
+ * @table-background
+ * @table-background-hover
+ * @table-th-background
+ * @table-th-text
+ *
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+
+/* +++++++++++++  table display  Categories table, contact etc, ++++++++++++++++++++* */
+
+table
+	{
+	border: solid 1px @table-border;
+	}
+	
+/* table header row */	
+table th
+	{
+	background-color: @table-th-background;
+	color: @table-th-text;
+	}
+	
+table td
+	{
+	border-bottom: solid 1px @table-border;
+	}
+	
+table th a:link,
+table th a:visited
+	{
+	color: @table-th-text;
+	}
+
+tr.odd, tr.cat-list-row1
+	{
+	background:darken(@table-background,2%);
+	}
+
+table tr:hover td,
+table tr:hover th
+	{
+	background-color: @table-background-hover;
+	}

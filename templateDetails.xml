@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension 
+	version="3.0"
+	type="template"
+	client="site"
+	method="upgrade">
+	<name>labyrint3</name>
+	<creationDate>10-08-2016</creationDate>
+	<author>Pierre Veelen</author>
+	<authorEmail>pierre@pvln.nl</authorEmail>
+	<authorUrl>http://www.pvln.nl</authorUrl>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>3.2.4</version>
+	<description>TPL_LABYRINT3_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>jsstrings.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>CHANGELOG.txt</filename>
+	</files>
+
+	<positions>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+	</positions>
+
+	<!-- 	For core templates, we also install/uninstall the language files in the core language folders. -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_labyrint3.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_labyrint3.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_labyrint3.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.tpl_labyrint3.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="wrapperSmall"  class="validate-numeric" type="text" default="53"
+					label="TPL_LABYRINT3_FIELD_WRAPPERSMALL_LABEL"
+					description="TPL_LABYRINT3_FIELD_WRAPPERSMALL_DESC"
+					filter="integer" />
+
+				<field name="wrapperLarge"  class="validate-numeric" type="text" default="72"
+					label="TPL_LABYRINT3_FIELD_WRAPPERLARGE_LABEL"
+					description="TPL_LABYRINT3_FIELD_WRAPPERLARGE_DESC"
+					filter="integer" />
+
+				<field name="logo" type="media"
+					label="TPL_LABYRINT3_FIELD_LOGO_LABEL" description="TPL_LABYRINT3_FIELD_LOGO_DESC" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="TPL_LABYRINT3_FIELD_SITETITLE_LABEL"
+					description="TPL_LABYRINT3_FIELD_SITETITLE_DESC"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="TPL_LABYRINT3_FIELD_DESCRIPTION_LABEL"
+					description="TPL_LABYRINT3_FIELD_DESCRIPTION_DESC"
+					filter="string" />
+
+				<field name="navposition" type="list" default="center"
+					label="TPL_LABYRINT3_FIELD_NAVPOSITION_LABEL"
+					description="TPL_LABYRINT3_FIELD_NAVPOSITION_DESC"
+					filter="word"
+				>
+					<option value="center">TPL_LABYRINT3_OPTION_AFTER_CONTENT</option>
+					<option value="left">TPL_LABYRINT3_OPTION_BEFORE_CONTENT</option>
+				</field>
+
+				<field name="bootstrap" type="textarea"
+					label="TPL_LABYRINT3_FIELD_BOOTSTRAP_LABEL"
+					description="TPL_LABYRINT3_FIELD_BOOTSTRAP_DESC"
+					rows="4" columns="30"
+				/>
+				
+				<field name="templatecolor" type="list" default="nature"
+					label="TPL_LABYRINT3_FIELD_TEMPLATECOLOR_LABEL"
+					description="TPL_LABYRINT3_FIELD_TEMPLATECOLOR_DESC"
+					filter="word"
+				>
+					<option value="nature">TPL_LABYRINT3_OPTION_NATURE</option>
+					<option value="personal">TPL_LABYRINT3_OPTION_PERSONAL</option>
+					<option value="red">TPL_LABYRINT3_OPTION_RED</option>
+					<option value="turq">TPL_LABYRINT3_OPTION_TURQ</option>
+					<option value="orange">TPL_LABYRINT3_OPTION_ORANGE</option>
+					<option value="purple">TPL_LABYRINT3_OPTION_PURPLE</option>
+					<option value="image">TPL_LABYRINT3_OPTION_IMAGE</option>
+				</field>
+
+				<field name="headerImage" type="media"
+					label="TPL_LABYRINT3_FIELD_HEADER_IMAGE_LABEL" description="TPL_LABYRINT3_FIELD_HEADER_IMAGE_DESC" />
+
+				<field name="backgroundcolor" type="color" default="#eee"
+					label="TPL_LABYRINT3_FIELD_HEADER_BACKGROUND_COLOR_LABEL"
+					description="TPL_LABYRINT3_FIELD_HEADER_BACKGROUND_COLOR_DESC" />
+
+			</fieldset>
+			
+			<fieldset name="Labyrint3Analytics">
+				<field	name="AnalyticsType" 
+						type="radio"
+						default="universal"
+						label="TPL_LABYRINT3_FIELD_GA_TYPE_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_TYPE_DESC"
+				>
+						<option value="universal">Universal</option>
+						<option value="asynchronous">Asynchronous</option>
+                </field>
+				
+				<field	name="AnalyticsCode"
+						type="text"
+						default="UA-XXXXX-X"
+						label="TPL_LABYRINT3_FIELD_GA_CODE_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_CODE_DESC"
+				/>
+				
+				<field 	name="AnalyticsDomain"
+						type="text"
+						default="auto"
+						label="TPL_LABYRINT3_FIELD_GA_DOMAIN_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_DOMAIN_DESC"
+				/>
+                				
+				<field	name="VerificationCode"
+						type="text"
+						default=""
+						label="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_LABEL"
+						description="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_DESC" />
+			</fieldset>
+			
+		</fields>
+	</config>
+	
+	<!-- 	Information for the update server -->
+	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="Labyrint 3 Template Updates">
+			http://update.pvln.nl/joomla/templates/labyrint3/labyrint3.xml
+		</server>
+		<server
+			type="extension"
+			priority="5"
+			name="Labyrint 3 Template Updates">
+			http://pvln.nl/images/updates/templates/labyrint3.xml
+		</server>
+	</updateservers>
+	
+</extension>

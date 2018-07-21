@@ -1,0 +1,130 @@
+// main: orange.less
+/*
+ * ##########################  COLORS  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * ###############################################################
+*/
+
+/*  Generic color definition            */
+/****************************************/
+@orange-very-light:	rgb(255,250,170);	/* orange-light-back = 	rgb(255,250,170)	= #FFFAAA			*/
+@orange-light:		rgb(247,102,17);	/* orange-light = 		rgb(247,102,17)		= #f76611			*/
+@orange-dark:		rgb(191,10,10);		/* orang-dark =			rgb(191,10,10)		= #BF0A0A			*/
+@yellow:			rgb(247,246,25);	/* yellow =				rgb(247,246,25)		= #f7f619			*/
+@yellow-light:		rgb(255,255,128);	/* yellow-light =		rgb(255,255,128)	= #ffff80			*/
+
+/*  The basecolors used in this template    */
+/********************************************/
+@base-text:							lighten(black,20%); /* Don't use black as textcolor but a little bit grey-isch */
+@base-background:					white;
+
+/* general */
+@general-text:						@base-text;
+@general-background:				@base-background;
+@general-text-hover:				@yellow-light;
+@general-background-hover:			@orange-dark;
+@general-text-link:					@orange-dark;
+@general-heading:					@orange-dark;
+@general-border:					@orange-light;
+
+/* navigation */
+@nav-text:							@orange-dark;
+@nav-background:					@base-background;
+@nav-border:						@orange-light;
+
+/* footer */
+@footer-text:						@yellow;
+@footer-background:					@orange-dark;
+@footer-border:						@orange-light;
+@footer-text-light:					@yellow-light;
+
+/* pagination */
+@pagination-text:					darken(white,40%); 	/* NOG AANPASSEN ?*/
+@pagination-text-inverse:			white; 				/* NOG AANPASSEN ?*/
+@pagination-background:				darken(@base-background,4%);
+@pagination-background-inverse:		@orange-dark;
+
+/* logo */
+@logo-text:							@orange-dark;
+
+/* tabs */
+@tabs-text:							@base-text;
+@tabs-text-inverse:					white; 				/* NOG AANPASSEN ?*/
+@tabs-background:					@base-background;
+@tabs-background-inverse:			@orange-dark;
+@tabs-border:						@orange-light;
+
+/* header */
+@header-text:						@base-text;
+@header-text-background:			@base-background;
+@header-background:					@orange-dark;
+@header-background-light:			@orange-light;
+
+/* highlight menu */		
+@hl-menu-background:				@base-background;
+@hl-menu-border:					@orange-light;
+@hl-menu-text-select:				@orange-dark;		
+@hl-menu-text-hover:				@orange-dark;	
+@hl-menu-text-link:					@orange-light;	
+	
+/* text articles */
+@article-text-color:				@base-text;
+@article-text-background:			@base-background;
+@article-text-inverse-background:	@orange-dark;
+
+/* responsive */
+@responsive-border:					@orange-light;
+@responsive-text:					@orange-dark;
+@responsive-background:				@base-background;
+@responsive-background-inverse:		@orange-dark;
+@responsive-heading:				@orange-light;
+
+/* table */
+@table-border:						@orange-light;
+@table-background:					@base-background;
+@table-background-hover:			@orange-very-light;
+@table-th-background:				@orange-dark;				
+@table-th-text:						@yellow-light;	
+
+/* slider */
+@slider-text:						@orange-dark;
+@slider-border:						@orange-light;
+
+/* content */
+@content-border:					@orange-light;
+@content-background:				@base-background;
+
+/* watermark */
+
+/* header menu */
+@header-menu-border:				@orange-light;
+@header-menu-top-text:				@yellow;
+@header-menu-background:			@orange-dark;
+@header-menu-heading:				@orange-dark;
+
+@header-menu-top-text-hover:		@yellow;
+@header-menu-top-background-hover:	@orange-light;
+
+@header-menu-top-text-select:		@orange-dark;
+@header-menu-top-background-select:	@yellow-light;
+@header-menu-top-border-select:		@yellow-light;
+
+@header-menu-button-text:			@orange-light;
+@header-menu-button-background:		@base-background;
+
+/* CLASS SUFFIXES */
+
+/* _menu */
+@moduletable_menu-border:			@orange-light;
+@moduletable_menu-background:		darken(@base-background,2%);
+

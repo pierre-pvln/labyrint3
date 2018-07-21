@@ -1,0 +1,120 @@
+// main: purple.less
+/*
+ * ##########################  HEADER_MENU  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @header-menu-border
+ * @header-menu-top-text
+ * @header-menu-background
+ * @header-menu-heading
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+ 
+#header ul.menu
+	{
+	border:0;
+	list-style-type:none;
+	border-radius:0;
+	overflow:hidden;
+	margin:0 auto ;
+	text-align:center;
+	position:absolute;
+	top:0;
+	right:10px;
+	}
+	
+#header ul.menu li
+	{
+	border:0;
+	}
+	
+#header ul.menu a
+	{
+	box-shadow:none;
+	border-bottom:0
+	}
+
+/*
+ * Settings for de menu block at top of the page
+*/
+#header ul.menu li a:link,
+#header ul.menu li a:visited
+	{
+	color:@header-menu-top-text;
+	border:0;
+	border-right:solid 1px @header-menu-border;
+	box-shadow: none;
+/*	background:transparent; */
+	background:@header-menu-background;
+	padding:10px ;
+	display:inline-block
+	}
+/*
+ * Settings for de menu block item which is hovered at top of the page
+*/
+#header ul.menu li:first-child a
+	{
+	border-radius:0
+	}
+
+#header ul.menu li a:hover,
+#header ul.menu li a:active,
+#header ul.menu li a:focus
+	{
+	color:@header-menu-top-text-hover;
+	background:@header-menu-top-background-hover;
+	padding:10px
+	}
+/*
+ * Settings for the menu block item which is selected at top of the page
+*/
+#header ul li.active a:link,
+#header ul li.active a:visited
+	{
+	color:@header-menu-top-text-select;
+	border-right:solid 1px @header-menu-top-border-select;
+	background:@header-menu-top-background-select;
+	padding: 10px  ;
+	}
+
+#fontsize a,
+#fontsize h3
+	{
+	color:@header-menu-heading;
+	}
+
+	
+/*  orange background */
+.button, 
+button,
+p.readmore a,
+.pagenav a:link,
+.pagenav a:visited, 
+#advanced-search-toggle,
+.profile-edit a:link,
+.profile-edit a:visited,
+h3.js_heading
+	{
+	background-color: darken(@header-menu-button-background,4%);
+	background-image: -moz-linear-gradient(center top, @header-menu-button-background, darken(@header-menu-button-background,10%));
+	background-repeat: repeat-x;
+	border:solid 1px @header-menu-border;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: @header-menu-button-text;
+	}
+	
+	

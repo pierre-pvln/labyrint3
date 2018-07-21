@@ -1,0 +1,90 @@
+// main: purple.less
+/* ##########################  GENERAL  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @general-text
+ * @general-background 
+ * @general-text-hover
+ * @general-background-hover
+ * @general-text-link
+ * @general-heading
+ * @general-border
+ *
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+body, 
+body#shadow,
+	{
+	font-family:@body-fonts;
+	color:@general-text;
+	background:@general-background;
+	}
+
+h3, 
+body#shadow h3 
+	{
+	color:@general-heading;
+	font-family:@body-fonts;
+	font-weight: bold;
+	}
+
+h2 a
+	{
+	text-decoration: none
+	}
+
+h2, 
+body#shadow h2
+	{
+	border-bottom: solid 1px @general-border;
+	color:@general-heading;
+	font-family:@heading-fonts;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+.moduletable h3
+	{
+	border-bottom: solid 1px @general-border;
+	text-transform: uppercase;
+	color:@general-heading;
+	font-family:@heading-fonts;
+	font-weight: bold;
+	}
+
+.items-row h2
+	{
+	border-top: solid 1px @general-border;
+	color:@general-heading;
+	font-family:@heading-fonts;
+	text-transform: uppercase;
+	}
+
+a:link,
+a:visited
+	{
+	color:@general-text-link;
+	}
+
+a:hover,
+a:active,
+a:focus
+	{
+	color:@general-text-hover;
+	background:@general-background-hover;
+	}

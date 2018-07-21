@@ -1,0 +1,38 @@
+// main: orange.less
+/*
+ * ##########################  NAVIGATION  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @nav-text
+ * @nav-background
+ * @nav-border
+ *
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+#header ul.menu {
+	border-color: @nav-border;
+}
+
+ul.menu a:hover,
+ul.menu a:active,
+ul.menu a:focus {
+	background-color: darken(@nav-background,4%);
+	background-image: -moz-linear-gradient(center top, @nav-background, darken(@nav-background,10%));
+	background-repeat: repeat-x;
+	background: url("@{image_folder}/arrow-dark-orange.png") no-repeat right center;
+	color: @nav-text;
+}

@@ -1,0 +1,130 @@
+// main: purple.less
+/*
+ * ##########################  COLORS  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * ###############################################################
+*/
+
+/*  Generic color definition            */
+/****************************************/
+/*@orange-very-light:	rgb(255,250,170);	/* orange-light-back = 	rgb(255,250,170)	= #FFFAAA			*/
+@purple-dark:		rgb(86,1,125);		/* purple-dark =		rgb(86,1,125)		= #56017D			*/
+@purple-light:		rgb(240,2,127);		/* purple-light = 		rgb(240,2,127)		= #F0027F			*/
+@purple-very-light:	rgb(252,199,226);	/* purple-very-light =	rgb(252,199,226)	= #FCC7E2			*/
+/*@yellow-light:		rgb(255,255,128);	/* yellow-light =		rgb(255,255,128)	= #ffff80			*/
+
+/*  The basecolors used in this template    */
+/********************************************/
+@base-text:							lighten(black,20%); /* Don't use black as textcolor but a little bit grey-isch */
+@base-background:					white;
+
+/* general */
+@general-text:						@base-text;
+@general-background:				@base-background;
+@general-text-hover:				@purple-light;
+@general-background-hover:			@purple-dark;
+@general-text-link:					@purple-dark;
+@general-heading:					@purple-dark;
+@general-border:					@purple-light;
+
+/* navigation */
+@nav-text:							@purple-dark;
+@nav-background:					@base-background;
+@nav-border:						@purple-light;
+
+/* footer */
+@footer-text:						@purple-very-light;
+@footer-background:					@purple-dark;
+@footer-border:						@purple-light;
+@footer-text-light:					@purple-light;
+
+/* pagination */
+@pagination-text:					darken(white,40%); 	/* NOG AANPASSEN ?*/
+@pagination-text-inverse:			white; 				/* NOG AANPASSEN ?*/
+@pagination-background:				darken(@base-background,4%);
+@pagination-background-inverse:		@purple-dark;
+
+/* logo */
+@logo-text:							@purple-dark;
+
+/* tabs */
+@tabs-text:							@base-text;
+@tabs-text-inverse:					white; 				/* NOG AANPASSEN ?*/
+@tabs-background:					@base-background;
+@tabs-background-inverse:			@purple-dark;
+@tabs-border:						@purple-light;
+
+/* header */
+@header-text:						@base-text;
+@header-text-background:			@base-background;
+@header-background:					@purple-dark;
+@header-background-light:			@purple-light;
+
+/* highlight menu */		
+@hl-menu-background:				@base-background;
+@hl-menu-border:					@purple-light;
+@hl-menu-text-select:				@purple-dark;		
+@hl-menu-text-hover:				@purple-dark;	
+@hl-menu-text-link:					@purple-light;	
+	
+/* text articles */
+@article-text-color:				@base-text;
+@article-text-background:			@base-background;
+@article-text-inverse-background:	@purple-dark;
+
+/* responsive */
+@responsive-border:					@purple-light;
+@responsive-text:					@purple-dark;
+@responsive-background:				@base-background;
+@responsive-background-inverse:		@purple-dark;
+@responsive-heading:				@purple-light;
+
+/* table */
+@table-border:						@purple-light;
+@table-background:					@base-background;
+@table-background-hover:			lighten(@purple-very-light,10%);
+@table-th-background:				@purple-dark;				
+@table-th-text:						@purple-light;	
+
+/* slider */
+@slider-text:						@purple-dark;
+@slider-border:						@purple-light;
+
+/* content */
+@content-border:					@purple-light;
+@content-background:				@base-background;
+
+/* watermark */
+
+/* header menu */
+@header-menu-border:				@purple-light;
+@header-menu-top-text:				@purple-very-light;
+@header-menu-background:			@purple-dark;
+@header-menu-heading:				@purple-dark;
+
+@header-menu-top-text-hover:		@purple-light;
+@header-menu-top-background-hover:	@purple-dark;
+
+@header-menu-top-text-select:		@purple-dark;
+@header-menu-top-background-select:	@purple-very-light;
+@header-menu-top-border-select:		@purple-light;
+
+@header-menu-button-text:			@purple-light;
+@header-menu-button-background:		@base-background;
+
+/* CLASS SUFFIXES */
+
+/* _menu */
+@moduletable_menu-border:			@purple-light;
+@moduletable_menu-background:		darken(@base-background,2%);
+

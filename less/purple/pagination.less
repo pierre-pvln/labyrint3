@@ -1,0 +1,48 @@
+// main: purple.less
+/*
+ * ##########################  PAGINATION  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @pagination-text
+ * @pagination-text-inverse
+ * @pagination-background
+ * @pagination-background-inverse
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+.pagination span,
+.pagination span  a:hover
+	{
+	color: @pagination-text;
+	background-color: @pagination-background;
+	}
+
+/* active item */
+span.pagenav
+	{
+	background:@pagination-background-inverse;
+	color:@pagination-text-inverse;
+	}
+
+.pagination-start span.pagenav,
+.pagination-prev  span.pagenav,
+.pagination-end span.pagenav,
+.pagination-next span.pagenav
+	{
+	background-color:@pagination-background;
+	color:@pagination-text;
+	}

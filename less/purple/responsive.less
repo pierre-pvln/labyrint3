@@ -1,0 +1,119 @@
+// main: purple.less
+/*
+ * ##########################  RESPONSIVE  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @responsive-text
+ * @responsive-border
+ * @responsive-background 
+ * @responsive-background-inverse 
+ * @responsive-heading
+ *
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+#mobile_select h2
+	{
+	border:0;
+	margin:-17px 0 0 0;
+	padding:0;
+	background:@responsive-heading;
+	text-align:right
+	}
+
+#mobile_select h2 a
+	{
+	display:inline-block;
+	font-size:0.8em;
+	border-radius:4px 4px 0 0;
+	padding:6px;
+	font-size:0.75em;
+	margin-right:5px;
+	}
+
+/*
+ * ##########################  Settings for small display  ###########################
+ */
+
+@media only screen and (max-width: 480px) {
+
+	  img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+	#fontsize{display:none}
+	#nav,#wrapper2,#wrapper,.cols-3 .column-1,.cols-3 .column-2,.cols-3 .column-3,#right,.box,#header form
+		{
+		float: none;
+		width: 100%
+		}
+	#header {padding-top:3em; position:relative; margin:0; max-height:auto !important; }
+	#header form  {margin:0}
+	#all {padding-top:0}
+	.logoheader {background:@responsive-background-inverse; min-height:100px;margin:0 }
+	.box {
+		border-left: 0 !important;
+		border-bottom: solid 1px @responsive-border;
+	}
+	#line {
+		text-align: center;
+		top: 0;
+		right: auto;
+		max-width: 100% ;
+		min-width:100%;
+		margin: 0 0px;
+		background:@responsive-background-inverse;
+		position:absolute
+	}
+	#header form input {
+		float: none; margin-bottom:4px
+	}
+	#menuwrapper { margin-top:10px; background:@responsive-background; padding:10px; width:97%}
+	#header ul.menu {position:relative; top:0;left:20px; right:20px; margin:0; width:90%; border-radius:4px; text-align:left; border:0}
+	#header ul.menu li:first-child a {border-radius: 4px 4px 0 0}
+	#header ul.menu li:last-child a {border-radius:0 0 4px 4px }
+	#header ul.menu li a:link,
+	#header ul.menu li a:visited {
+		display: block;
+		padding: 6px 10px;
+		border-right:0;
+		border-bottom: solid 1px @responsive-border;
+		background:@responsive-background;		
+		color:@responsive-text;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1382px) { /* Styles */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) , only screen and
+		(min--moz-device-pixel-ratio: 1.5) , only screen and
+	(min-device-pixel-ratio: 1.5) { /* Styles */
+}
+

@@ -1,0 +1,62 @@
+// main: purple.less
+/**
+ * ##########################  footer  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@pvln.nl
+ * Date:	2016-07-17
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * CSS styling for footer
+ *
+ * LESS colors used:
+ * =================
+ * @footer-text
+ * @footer-text-light
+ * @footer-background
+ * @footer-border
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+#footer-inner, #footer, #footer-outer {
+	background:@footer-background;
+	}
+
+#footer-sub {
+	background:@footer-background;
+	}
+
+/*#footer {background:@c-text-background-inverse; max-width:1025px; margin:0 auto; } */
+#footer,
+.footer1,	/* Class based setting for footer1 and footer2, needed for override of system/css/error.css  */
+.footer2 {
+	background:@footer-background;
+	color:@footer-text;
+	max-width:1025px;
+	margin:0 auto;
+	text-align: center;
+	}
+
+#footer a {
+	color:@footer-text-light;
+	}
+
+.box1 {
+	border-right:solid 1px @footer-border;
+	}
+
+.box3 {
+	border-left:solid 1px @footer-border;
+	}
+
+#bottom ul li a {
+	background-image:none;
+	padding-left:0
+	}
+

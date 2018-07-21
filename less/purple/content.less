@@ -1,0 +1,40 @@
+// main: purple.less
+/*
+ * ##########################  CONTENT  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @content-background
+ * @content-border
+ *
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+.article-info {
+	background-color: darken(@content-background,2%);
+	background-image: -moz-linear-gradient(top, @content-background, darken(@content-background,4%));
+	background-image: -ms-linear-gradient(top, @content-background, darken(@content-background,4%));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@content-background), to(darken(@content-background,4%)) );
+	background-image: -webkit-linear-gradient(top, @content-background, darken(@content-background,4%));
+	background-image: -o-linear-gradient(top, @content-background, darken(@content-background,4%));
+	background-image: linear-gradient(top, @content-background, darken(@content-background,4%));
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@content-background, endColorstr=darken(@content-background,4%), GradientType=0);
+	border: 1px solid @content-border;
+	-webkit-box-shadow: inset 0 1px 0 @content-background;
+	-moz-box-shadow: inset 0 1px 0 @content-background;
+	box-shadow: inset 0 1px 0 @content-background;
+}

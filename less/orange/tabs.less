@@ -1,0 +1,81 @@
+// main: orange.less
+/*
+ * ##########################  TABS  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@gmail.com
+ * Date:	2015-08-02
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * LESS colors used:
+ * =================
+ * @tabs-text
+ * @tabs-background
+ * @tabs-background-inverse
+ * @tabs-border
+ * 
+ * (Do not use any explicit color definitions in this file)
+ *
+ * ###############################################################
+*/
+
+ul.tabs li,
+dl.tabs dt h3 a:link,
+dl.tabs dt h3 a:visited
+	{
+	background: darken(@tabs-background,4%) url("@{image_folder}/box.png") repeat-x;
+	}
+	
+ul.tabs li a:link,
+ul.tabs li a:visited,
+dl.tabs dt a
+	{
+	color:@tabs-text;
+	border:solid 1px @tabs-border; border-bottom:0
+	}
+
+ul.tabs li a:hover,
+ul.tabs li a:active,
+ul.tabs li a:focus
+	{
+	color:@tabs-text;
+	}
+
+.tabcontent, div.current
+	{
+	background:@tabs-background;
+	color:@tabs-text;
+	border:solid 1px @tabs-border;
+	}
+
+.tabcontent .linkclosed
+	{
+	color:@tabs-text;
+	border-bottom:solid 1px darken(@tabs-background,4%);
+	}
+
+ul.tabs li a.linkopen,
+dl.tabs dt.open  h3 a:link,
+dl.tabs dt.open  h3 a:visited
+	{
+	background:darken(@tabs-background,4%);
+	color:@tabs-text;
+	border-radius: 5px 5px 0px 0px;
+	}
+
+ul.tabs li a.linkclosed:hover,
+ul.tabs li a.linkclosed:active,
+ul.tabs li a.linkclosed:focus,
+ul.tabs li a.linkopen:hover,
+ul.tabs li a.linkopen:active,
+ul.tabs li a.linkopen:focus
+	{
+	background:@tabs-background-inverse;
+	color:@tabs-text-inverse;
+	}
+
